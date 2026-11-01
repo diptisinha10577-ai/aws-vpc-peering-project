@@ -1,0 +1,8 @@
+student_name = "YOUR NAME"
+my_ip_cidr   = "0.0.0.0/32" # replace with output of: curl -s https://checkip.amazonaws.com  (add /32)
+key_name     = "ewb-lab"
+region       = "ap-south-1"
+
+# Phase switches (see ../README.md)
+enable_peering         = false # phase 1: baseline. Change to true for phase 2.
+enable_app_b_icmp_rule = true  # change to false for the controlled failure, then back to true
