@@ -1,0 +1,21 @@
+# Secrets - never commit these
+*.pem
+*.key
+id_rsa*
+
+# Terraform state and local cache (state can contain sensitive values)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfvars
+*.auto.tfvars
+.terraform.tfstate.lock.info
+
+# Your real captured output may contain public IPs / account IDs; review before committing
+evidence/raw/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
